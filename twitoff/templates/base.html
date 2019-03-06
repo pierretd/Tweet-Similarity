@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TwitOff - {{ title }}</title>
+        <!-- CSS, keywords, metadata goes here -->
+        <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+        <style>
+             body {
+    margin: 2rem;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    min-width: 90vw;
+  }
+
+  .container:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .container.with-title{
+    min-width: auto;
+  }
+
+  div.containers > .container {
+    display: inline-block;
+    max-width: 400px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .hero {
+    width: 100%;
+    color: #333;
+  }
+
+  .title-header {
+    margin: 0;
+    width: 100%;
+    line-height: 1.15;
+    font-size: 36px;
+    
+  }
+
+  .title-header,
+  .description {
+    text-align: center;
+  }
+
+  .description {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+  }
+
+  .row {
+    min-width: 90vw;
+    margin: 20px auto 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .title{
+      color: rgb(15, 15, 15);
+      text-decoration: underline;
+      margin-bottom: 15px;
+  }
+
+  .section-title{
+      font-size: 1.5rem;
+      color: blue;
+    text-decoration: underline;
+  }
+
+  title{
+      font-size: 1.5rem;
+  }
+
+.email{
+  padding: 15px;
+}
+            </style>
+    </head>
+
+    <body>
+        <h1>TWITTERiDs: Presented by Pierre Damiba</h1>
+        <div class="nes-container with-title is-centered">
+            <p class="title">WELCOME TO TWITTER IDS</p>
+         
+        <p>A list of Twitter Users and their IDs</p>
+    </div>
+    <div class="nes-container is-dark with-title">
+        <p class="title">User ID - Twitter Handle</p>
+      
+        <ul>
+            {% for user in users %}
+            <li>{{ user.id }} - {{ user.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    </body>
+</html>
