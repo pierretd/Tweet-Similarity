@@ -7,15 +7,17 @@ verify_ssl = true
 
 [packages]
 basilica = "*"
-tweepy = "*"
-python-decouple = "*"
 flask = "*"
 flask-sqlalchemy = "*"
-numpy = "*"
-sklearn-linear-model = "*"
-sklearn = "*"
-scikit-learn = "*"
 gunicorn = "*"
+pip = "==9.0.1"
+python-decouple = "*"
+python-dotenv = "*"
+scikit-learn = "*"
+sqlalchemy = "*"
+tweepy = "*"
+twython = "*"
+numpy = "*"
 
 [requires]
-python_version = "3.6"
+"python_version =" = "3.6"
