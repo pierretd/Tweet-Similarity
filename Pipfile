@@ -11,7 +11,10 @@ tweepy = "*"
 python-decouple = "*"
 flask = "*"
 flask-sqlalchemy = "*"
-python-dotenv = "*"
+numpy = "*"
+sklearn-linear-model = "*"
+sklearn = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.6"
