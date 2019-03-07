@@ -15,6 +15,7 @@ numpy = "*"
 sklearn-linear-model = "*"
 sklearn = "*"
 scikit-learn = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
